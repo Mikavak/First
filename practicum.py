@@ -1,19 +1,17 @@
-class Employee:
-    # Вместо инструкции pass напишите свой код.
-    vacation_days = 28
+class Phone:
 
-    def __init__(self, first_name_value, second_name_value, gender_value):
-        self.first_name = first_name_value
-        self.second_name = second_name_value
-        self.gender = gender_value
+    line_type = 'Проводной'
 
-# Создайте экземпляры класса Employee с различными значениями атрибутов.
-employee1 = Employee(first_name_value='Мясинка',
-                     second_name_value='Мясковна', gender_value='ж')
-employee2 = Employee(first_name_value='Жульбик',
-                     second_name_value='Булькович', gender_value='м')
+    def __init__(self, dial_line_type) -> None:
+        self.dial_line = dial_line_type
 
-# Допишите код для вывода информации о сотрудниках.
-print(f'Имя: {employee1.first_name}',
-      f'Фамилия: {employee1.second_name}, Пол: {employee1.gender}',
-      f'Отпускных дней в году: {employee1.vacation_days}.')
+    def ring(self):
+        print('zzzzzz')
+
+    def call(self, phone_number):
+        print(
+            f'я звоню по номеру {phone_number}',
+            f'использую тип для связи: {self.line_type}.')
+        
+new_phone = Phone('дисковый')
+new_phone.call('555-55-55')
