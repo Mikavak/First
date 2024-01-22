@@ -43,7 +43,7 @@ class PartTimeEmployee(Employee):
 
 # Пример использования:
 #full_time_employee = FullTimeEmployee('Иван', 'Иванов', 'м', 50000)
-print(full_time_employee.get_unpaid_vacation('2023-07-01', 5))
+#print(full_time_employee.get_unpaid_vacation('2023-07-01', 5))
 
 part_time_employee = PartTimeEmployee('Анна', 'Петрова', 'ж')
 part_time_employee.consume_vacation(5)
