@@ -29,8 +29,8 @@ class FullTimeEmployee(Employee):
     def get_unpaid_vacation(self, start_date, days):
         return f'Начало неоплачиваемого отпуска: {start_date}, продолжительность: {days} дней.'
 
-    def __get_vacation_salary(self):
-        return (0.8 * self.__salary)
+    # def __get_vacation_salary(self):
+    #     return (0.8 * self.__salary)
 
 
 class PartTimeEmployee(Employee):
